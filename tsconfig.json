@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "strictNullChecks": true,
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "typeRoots": ["node_modules/@types", "src/types"],
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "paths": {
+      "@api": ["./src/api/"],
+      "@base": ["./src/base/"],
+      "@components": ["./src/components/"],
+      "@pages": ["./src/pages/"],
+      "@helper": ["./src/helper/"],
+      "@hooks": ["./src/hooks/"],
+      "@api/*": ["./src/api/*"],
+      "@base/*": ["./src/base/*"],
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@helper/*": ["./src/helper/*"],
+      "@hooks/*": ["./src/hooks/*"]
+    }
+  },
+  "include": [
+    "src/types/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/**/*.ts",
+    "src/**/**/*.tsx",
+    "src/**/**/*.js",
+    "src/**/**/*.jsx"
+  ],
+  "exclude": ["node_modules", "build"]
+}
