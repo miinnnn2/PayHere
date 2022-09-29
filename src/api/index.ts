@@ -19,7 +19,7 @@ export const typedFetch = async <T>(params: FetchParams) => {
   const res = await fetch(reqURL, {
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
-      Authorization: `Bearer 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`,
+      Authorization: `Bearer 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`,
       Accept: 'application/vnd.github.text-match+json'
     },
     mode: 'cors',
